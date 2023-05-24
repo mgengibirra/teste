@@ -6,4 +6,4 @@ olá *mundo*!
 """)
 
 for i in range(10):
-  #sl.write("""%d"""%i)
+   #sl.write("""%d"""%i)
