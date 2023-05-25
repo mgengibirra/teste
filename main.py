@@ -3,11 +3,13 @@ import streamlit as st
 
 st.title("File Manager")
 
+selected_dir = st.text_input("Enter the path to your directory:")
+
 '''
 # Streamlit app    
     
 # Directory selection
-selected_dir = st.text_input("Enter the path to your directory:")
+
 if selected_dir:
     try:
         os.chdir(selected_dir)
