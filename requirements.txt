@@ -1,7 +1,4 @@
-<pre  class="9"><code class="9">google-auth
-google-auth==1.35.0
-google-auth-oauthlib==0.4.5
-google-auth-httplib2==0.1.0
-google-api-python-client==2.24.0
+<pre  class="9"><code class="9">
+os
 streamlit
 </code></pre>
