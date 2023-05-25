@@ -1,0 +1,6 @@
+<pre  class="9"><code class="9">google-auth
+google-auth-oauthlib
+google-auth-httplib2
+google-api-python-client
+streamlit
+</code></pre>
