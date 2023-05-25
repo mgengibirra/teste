@@ -4,7 +4,12 @@ import streamlit as st
 st.title("File Manager")
 
 selected_dir = st.text_input("Enter the path to your directory:")
-
+try:
+    os.chdir(selected_dir)
+    st.success("Current working directory set to: " + os.getcwd())
+except OSError:
+    st.error("Invalid directory path.")
+        
 '''
 # Streamlit app    
     
