@@ -3,11 +3,10 @@ import streamlit as st
 
 st.title("File Manager")
 
-endereço = st.text_input("Enter the path to your directory:")
-endereço = r"%s"%endereço
+endereco = st.text_input("Enter the path to your directory:")
 
 try:
-    abs_dir = os.path.abspath(endereço)
+    abs_dir = os.path.abspath(endereco)
     os.chdir(abs_dir)
     st.success("Current working directory set to: " + os.getcwd())
 except OSError:
