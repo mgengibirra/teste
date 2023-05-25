@@ -5,15 +5,12 @@ st.title("File Manager")
 
 selected_dir = st.text_input("Enter the path to your directory:")
 
-st.write("diretório = " + selected_dir)
-
-if selected_dir:
-    try:
-        abs_dir = os.path.abspath(selected_dir)
-        os.chdir(abs_dir)
-        st.success("Current working directory set to: " + os.getcwd())
-    except OSError:
-        st.error("Invalid directory path.")
+try:
+    abs_dir = os.path.abspath(selected_dir)
+    os.chdir(abs_dir)
+    st.success("Current working directory set to: " + os.getcwd())
+except OSError:
+    st.error("Invalid directory path.")
 
 '''
 
