@@ -7,7 +7,8 @@ selected_dir = st.text_input("Enter the path to your directory:")
 selected_dir = r"%s"%selected_dir
 if selected_dir:
     try:
-        os.chdir(selected_dir)
+        abs_dir = os.path.abspath(selected_dir)
+        os.chdir(abs_dir)
         st.success("Current working directory set to: " + os.getcwd())
     except OSError:
         st.error("Invalid directory path.")
