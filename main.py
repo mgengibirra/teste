@@ -4,7 +4,7 @@ import streamlit as st
 st.title("File Manager")
 
 selected_dir = st.text_input("Enter the path to your directory:")
-selected_dir = r"%s"%selected_dir
+
 if selected_dir:
     try:
         abs_dir = os.path.abspath(selected_dir)
